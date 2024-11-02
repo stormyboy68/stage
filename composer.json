@@ -1,0 +1,31 @@
+{
+    "name": "asb/stage",
+    "autoload": {
+        "psr-4": {
+            "Asb\\Stage\\": "src/"
+        }
+    },
+    "type": "package",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "abouzar rostami",
+            "email": "abouzar.ros1368@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ASB\\MorphMTM\\Providers\\StageServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "version": "1.0.0",
+    "require": {}
+}
