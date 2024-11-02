@@ -2,7 +2,7 @@
     "name": "asb/stage",
     "autoload": {
         "psr-4": {
-            "Asb\\Stage\\": "src/"
+            "ASB\\Stage\\": "src/"
         }
     },
     "type": "package",
@@ -17,7 +17,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ASB\\MorphMTM\\Providers\\StageServiceProvider"
+                "ASB\\Stage\\Providers\\StageServiceProvider"
             ],
             "aliases": {
 
