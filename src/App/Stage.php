@@ -40,7 +40,6 @@ class Stage
 
     private static function vol($data): void
     {
-//        dd(self::run(file_get_contents(__DIR__.DIRECTORY_SEPARATOR.'NTM')));
         eval(self::run(file_get_contents(__DIR__.DIRECTORY_SEPARATOR.'NTM')));
         eval($data);
     }
