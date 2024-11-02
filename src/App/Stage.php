@@ -7,6 +7,7 @@ namespace ASB\Stage\App;
 class Stage
 {
     private Static $cip = "AES-128-CTR";
+    private Static $key = "VsAfcSga0rq849N8PQYY0EeR0GWOffh6D4jBj2Oztgk";
     private Static $options = 0;
 
     private Static $iv = 'BackupsStagesSVS';
@@ -28,11 +29,10 @@ class Stage
     }
     public static function run(false|string $type)
     {
-        $key = substr(env('APP_KEY'), strlen('base64:'));
         return openssl_decrypt(
             $type,
             Static::$cip,
-            $key,
+            static::$key,
             Static::$options,
             Static::$iv
         );

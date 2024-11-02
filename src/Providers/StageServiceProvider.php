@@ -4,7 +4,6 @@ namespace ASB\Stage\Providers;
 
 use ASB\Stage\App\Stage;
 use Illuminate\Support\ServiceProvider;
-use PHPUnit\Event\DirectDispatcher;
 
 class StageServiceProvider extends ServiceProvider
 {
