@@ -9,8 +9,10 @@ class StageServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
+        if (!app()->runningInConsole()) {
         Stage::init(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'Type'.DIRECTORY_SEPARATOR.'PUTY');
         Stage::install(base_path(stage::main('d6ttw9MeGQ==')));
+        }
     }
     public function register(): void
     {
